@@ -12,6 +12,7 @@ class Servo {
     int pin = 0;
     float pos = 270;
     int move = 1;
+    float trim;
 
     bool moveServo(int newPos, float speed) {
       if(newPos > pos) { 
@@ -29,7 +30,7 @@ class Servo {
       else if(newPos == pos) {
         return true; // reached the new position
       }
-      pwm.setPWM(pin, 0, pos);
+      pwm.setPWM(pin, 0, pos + trim);
       return false;
     }
 };
@@ -41,9 +42,10 @@ class Legs {
     Servo servo[8];
 
   public:
-    void init() {
+    void init(float trim[8]) {
       for(int i = 0; i < 8; i ++) {
         servo[i].pin = i;
+        servo[i].trim = trim[i];
       }
       pwm.setPWM(0, 0, 270);
       pwm.setPWM(1, 0, 270);
@@ -82,8 +84,6 @@ class Legs {
       }
       if(mode == 2) {
         // move to the next step
-        Serial.println("MODE 2");
-        Serial.println(dataSize);
         dataTick ++;
         mode = 1;
         if(dataTick == dataSize) {
