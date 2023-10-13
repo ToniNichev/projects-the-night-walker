@@ -77,8 +77,8 @@ Step stepsWalk[] = {
       0,
       -60,
       // front left leg
-      -80,
-      -10,
+      -100,
+      -30,
 
       // rear right leg
       -120 - 50,
@@ -90,7 +90,44 @@ Step stepsWalk[] = {
     1
   },
 
+  {
+    {
+      // front right down
+      0,
+      60,
+      // front left leg
+      -100,
+      -30,
+
+      // rear right leg
+      -120 - 50,
+      -50 + 110,
+      // rear left leg
+      -120 - 50,
+      -50 + 110,        
+    },
+    1
+  },
      
+
+  {
+    {
+      // rear left leg forward step 1
+      0,
+      60,
+      // front left leg
+      -120,
+      -30,
+
+      // rear right leg
+      -120 - 50,
+      -50 + 110,
+      // rear left leg
+      -120 - 50,
+      -80,        
+    },
+    1
+  },     
        
 };
 
