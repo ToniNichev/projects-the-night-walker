@@ -10,7 +10,7 @@ struct Step {
 class Servo {
   public:
     int pin = 0;
-    float pos = 270;
+    float pos = 0;
     int move = 1;
     float trim;
 
@@ -30,7 +30,9 @@ class Servo {
       else if(newPos == pos) {
         return true; // reached the new position
       }
-      pwm.setPWM(pin, 0, pos + trim);
+      int s = (pin == 2 || pin == 3 || pin > 5) ? 1 : -1;
+      float val = 270 + ((pos + trim) * s);
+      pwm.setPWM(pin, 0, val);
       return false;
     }
 };
