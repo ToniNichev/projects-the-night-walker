@@ -10,6 +10,7 @@
  int frontLegsUpper = 100;
  int frontLegsLower = - 120;
  int rearLegsBodyAngle = -10;
+ int walkingSpeed = 2;
 
 
 Step stepsWalk[] = {
@@ -21,20 +22,20 @@ Step stepsWalk[] = {
   {
     {
       // front right leg
-      20,
-      20 ,
+      0,
+      0 ,
       // front left leg
-      20,
-      20,
+      0,
+      0,
 
       // rear right leg
-      20,
-      20,
+      0,
+      0,
       // rear left leg
-      20,
-      20,        
+      0,
+      0,        
     },
-    2
+    
   },  
   
     
@@ -55,7 +56,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle,
       -140,        
     },
-    2
+    walkingSpeed
   },   
 
 
@@ -76,7 +77,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 20, // <<<
       -140 ,        
     },
-    2
+    walkingSpeed
   },   
 
 
@@ -96,7 +97,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 25 + 20, // <<<
       -140 + 60,        
     },
-    2
+    walkingSpeed
   },  
 
 
@@ -118,7 +119,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 0, // <<<
       -140 + 30,        
     },
-    3
+    walkingSpeed
   },  
 
   {
@@ -137,7 +138,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 90, // <<<
       -140 + 80,        
     },
-    3
+    walkingSpeed
   },   
 
 
@@ -160,7 +161,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 20, // <<<
       -140 ,        
     },
-    2
+    walkingSpeed
   },   
 
 
@@ -180,7 +181,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 25 + 20, // <<<
       -140 + 60,        
     },
-    2
+    walkingSpeed
   },  
 
 
@@ -202,7 +203,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 0, // <<<
       -140 + 30,        
     },
-    3
+    walkingSpeed
   },  
 
   {
@@ -221,7 +222,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 90, // <<<
       -140 + 80,        
     },
-    3
+    walkingSpeed
   },     
 
  
@@ -242,7 +243,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 20, // <<<
       -140 ,        
     },
-    2
+    walkingSpeed
   },   
 
 
@@ -262,7 +263,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 25 + 20, // <<<
       -140 + 60,        
     },
-    2
+    walkingSpeed
   },  
 
 
@@ -284,7 +285,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 0, // <<<
       -140 + 30,        
     },
-    3
+    walkingSpeed
   },  
 
   {
@@ -303,7 +304,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 90, // <<<
       -140 + 80,        
     },
-    3
+    walkingSpeed
   },    
 
 
@@ -324,7 +325,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 20, // <<<
       -140 ,        
     },
-    2
+    walkingSpeed
   },   
 
 
@@ -344,7 +345,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 25 + 20, // <<<
       -140 + 60,        
     },
-    2
+    walkingSpeed
   },  
 
 
@@ -366,7 +367,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 0, // <<<
       -140 + 30,        
     },
-    3
+    walkingSpeed
   },  
 
   {
@@ -385,7 +386,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 90, // <<<
       -140 + 80,        
     },
-    3
+    walkingSpeed
   },   
 
 
@@ -406,7 +407,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 20, // <<<
       -140 ,        
     },
-    2
+    walkingSpeed
   },   
 
 
@@ -426,7 +427,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 25 + 20, // <<<
       -140 + 60,        
     },
-    2
+    walkingSpeed
   },  
 
 
@@ -448,7 +449,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 0, // <<<
       -140 + 30,        
     },
-    3
+    walkingSpeed
   },  
 
   {
@@ -467,7 +468,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle + 90, // <<<
       -140 + 80,        
     },
-    3
+    walkingSpeed
   },     
 /* The en
 
