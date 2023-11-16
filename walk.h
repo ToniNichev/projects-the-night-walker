@@ -38,18 +38,18 @@ Step stepsWalk[] = {
   {
     {
       // front right leg
-      140,
+      0,
       0,
       // front left leg
-      140,
+      0,
       0,
 
       // rear right leg
-      140,
       0,
+      -140,
       // rear left leg
-      140,
-      0,        
+      0,
+      -140,        
     },
     1
   },   

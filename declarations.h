@@ -15,13 +15,13 @@ class Servo {
     float trim;
 
     bool moveServo(int newPos, float speed) {
-      if(newPos > pos - trim) { 
+      if(newPos > pos) { 
         if(pos + speed > newPos)
           pos = newPos;
         else
           pos = pos + speed;
       }
-      else if(newPos < pos - trim) {
+      else if(newPos < pos) {
         if(pos - speed < newPos)
           pos = newPos;
         else
@@ -49,12 +49,11 @@ class Legs {
         servo[i].pin = i;
         servo[i].trim = trim[i];
       }
-
       pwm.setPWM(0, 0, 270 + trim[0]);
-      pwm.setPWM(1, 0, 270) + trim[1];
+      pwm.setPWM(1, 0, 270 + trim[1]);
 
       pwm.setPWM(2, 0, 270 + trim[2]);
-      pwm.setPWM(3, 0, 270) + trim[3];
+      pwm.setPWM(3, 0, 270 + trim[3]);
 
       pwm.setPWM(4, 0, 270 + trim[4]);
       pwm.setPWM(5, 0, 270 + trim[5]);
