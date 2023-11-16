@@ -7,6 +7,10 @@
 
  */
 
+ int frontLegsUpper = 120;
+ int frontLegsLower = - 120;
+ int rearLegsBodyAngle = -10;
+
 
 Step stepsWalk[] = {
 
@@ -18,7 +22,7 @@ Step stepsWalk[] = {
     {
       // front right leg
       0,
-      0,
+      0 ,
       // front left leg
       0,
       0,
@@ -33,51 +37,86 @@ Step stepsWalk[] = {
     1
   },  
   
-
   // stand up
   {
     {
       // front right leg
-      0,
-      0,
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
       // front left leg
-      0,
-      0,
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
 
       // rear right leg
-      0,
+      0 + rearLegsBodyAngle,
       -140,
       // rear left leg
-      0,
+      0 + rearLegsBodyAngle,
       -140,        
     },
     1
   },   
 
-  /*
 
-  // ***************************
-  // All return back
-  // ***************************
-  /*
+
   {
     {
       // front right leg
-      0,
-      0,
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
       // front left leg
-      0,
-      0,
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
 
       // rear right leg
-      0,
-      0,
+      0 + rearLegsBodyAngle,
+      -140,
       // rear left leg
-      0,
-      0,        
+      0 + rearLegsBodyAngle + 20, // <<<
+      -140 ,        
     },
-    1
-  },    
-  */
+    2
+  },   
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle,
+      -140,
+      // rear left leg
+      0 + rearLegsBodyAngle + 25 + 30, // <<<
+      -140 + 60,        
+    },
+    2
+  },  
+
+// =======================================
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle + 20 - 20,
+      -140 + 40,
+      // rear left leg
+      0 + rearLegsBodyAngle + 25, // <<<
+      -140 + 60,        
+    },
+    2
+  },  
+
 };
 
