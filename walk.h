@@ -7,7 +7,7 @@
 
  */
 
- int frontLegsUpper = 120;
+ int frontLegsUpper = 100;
  int frontLegsLower = - 120;
  int rearLegsBodyAngle = -10;
 
@@ -21,22 +21,23 @@ Step stepsWalk[] = {
   {
     {
       // front right leg
-      0,
-      0 ,
+      20,
+      20 ,
       // front left leg
-      0,
-      0,
+      20,
+      20,
 
       // rear right leg
-      0,
-      0,
+      20,
+      20,
       // rear left leg
-      0,
-      0,        
+      20,
+      20,        
     },
     1
   },  
   
+    
   // stand up
   {
     {
@@ -110,10 +111,10 @@ Step stepsWalk[] = {
 
       // rear right leg
       0 + rearLegsBodyAngle + 20 - 20,
-      -140 + 40,
+      -140 + 60,
       // rear left leg
-      0 + rearLegsBodyAngle + 25, // <<<
-      -140 + 60,        
+      0 + rearLegsBodyAngle + 0, // <<<
+      -140 + 30,        
     },
     2
   },  
