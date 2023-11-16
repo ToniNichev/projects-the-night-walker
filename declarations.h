@@ -15,13 +15,13 @@ class Servo {
     float trim;
 
     bool moveServo(int newPos, float speed) {
-      if(newPos > pos) { 
+      if(newPos > pos - trim) { 
         if(pos + speed > newPos)
           pos = newPos;
         else
           pos = pos + speed;
       }
-      else if(newPos < pos) {
+      else if(newPos < pos - trim) {
         if(pos - speed < newPos)
           pos = newPos;
         else
@@ -49,17 +49,19 @@ class Legs {
         servo[i].pin = i;
         servo[i].trim = trim[i];
       }
-      pwm.setPWM(0, 0, 270);
-      pwm.setPWM(1, 0, 270);
 
-      pwm.setPWM(2, 0, 270);
-      pwm.setPWM(3, 0, 270);
+      pwm.setPWM(0, 0, 270 + trim[0]);
+      pwm.setPWM(1, 0, 270) + trim[1];
 
-      pwm.setPWM(4, 0, 270);
-      pwm.setPWM(5, 0, 270);
+      pwm.setPWM(2, 0, 270 + trim[2]);
+      pwm.setPWM(3, 0, 270) + trim[3];
 
-      pwm.setPWM(6, 0, 270);
-      pwm.setPWM(7, 0, 270);
+      pwm.setPWM(4, 0, 270 + trim[4]);
+      pwm.setPWM(5, 0, 270 + trim[5]);
+
+      pwm.setPWM(6, 0, 270 + trim[6]);
+      pwm.setPWM(7, 0, 270 + trim[7]);
+
      mode = 1;
     }
 
@@ -77,8 +79,6 @@ class Legs {
           if(complete[0] == true && complete[1] == true && complete[2] == true && complete[3] == true
             && complete[4] == true && complete[5] == true && complete[6] == true && complete[7] == true)
           {
-            Serial.println("###");
-            Serial.println(complete[0]);
             mode = 2; // tick complete
           }
         }

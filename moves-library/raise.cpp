@@ -9,57 +9,7 @@
 
 
 Step stepsWalk[] = {
-
-
-
-  // stand up
-
-  {
-    {
-      // front right leg
-      0,
-      0,
-      // front left leg
-      0,
-      0,
-
-      // rear right leg
-      0,
-      0,
-      // rear left leg
-      0,
-      0,        
-    },
-    1
-  },  
   
-
-  // stand up
-  {
-    {
-      // front right leg
-      140,
-      0,
-      // front left leg
-      140,
-      0,
-
-      // rear right leg
-      140,
-      0,
-      // rear left leg
-      140,
-      0,        
-    },
-    1
-  },   
-
-  /*
-
-  // ***************************
-  // All return back
-  // ***************************
-  /*
   {
     {
       // front right leg
@@ -77,7 +27,28 @@ Step stepsWalk[] = {
       0,        
     },
     1
-  },    
-  */
+  }, 
+
+
+  {
+    {
+      // front right leg
+      160,
+      160,
+      // front left leg
+      160,
+      160,
+
+      // rear right leg
+      100,
+      0,
+      // rear left leg
+      100,
+      0,        
+    },
+    1
+  }, 
+
+
 };
 

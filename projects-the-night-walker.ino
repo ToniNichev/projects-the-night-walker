@@ -20,7 +20,7 @@ void setup() {
   pwm.begin();
   pwm.setOscillatorFrequency(27000000);
   pwm.setPWMFreq(SERVO_FREQ);  // Analog servos run at ~50 Hz updates  
-  float trim[] = {0,0,0,0,0,0,0,0};
+  float trim[] = {0,0,10,0,0,0,-10,10};
   legs.init(trim);
   delay(2000);
   Serial.println("Starting ...");
