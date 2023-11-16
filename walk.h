@@ -34,7 +34,7 @@ Step stepsWalk[] = {
       20,
       20,        
     },
-    1
+    2
   },  
   
     
@@ -55,7 +55,7 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle,
       -140,        
     },
-    1
+    2
   },   
 
 
@@ -138,8 +138,337 @@ Step stepsWalk[] = {
       -140 + 80,        
     },
     3
+  },   
+
+
+
+ 
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle,
+      -140,
+      // rear left leg
+      0 + rearLegsBodyAngle + 20, // <<<
+      -140 ,        
+    },
+    2
+  },   
+
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle,
+      -140,
+      // rear left leg
+      0 + rearLegsBodyAngle + 25 + 20, // <<<
+      -140 + 60,        
+    },
+    2
+  },  
+
+
+// =======================================
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle + 90,
+      -140 + 80,
+      // rear left leg
+      0 + rearLegsBodyAngle + 0, // <<<
+      -140 + 30,        
+    },
+    3
+  },  
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle - 10,
+      -140 + 0,
+      // rear left leg
+      0 + rearLegsBodyAngle + 90, // <<<
+      -140 + 80,        
+    },
+    3
+  },     
+
+ 
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle,
+      -140,
+      // rear left leg
+      0 + rearLegsBodyAngle + 20, // <<<
+      -140 ,        
+    },
+    2
+  },   
+
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle,
+      -140,
+      // rear left leg
+      0 + rearLegsBodyAngle + 25 + 20, // <<<
+      -140 + 60,        
+    },
+    2
+  },  
+
+
+// =======================================
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle + 90,
+      -140 + 80,
+      // rear left leg
+      0 + rearLegsBodyAngle + 0, // <<<
+      -140 + 30,        
+    },
+    3
+  },  
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle - 10,
+      -140 + 0,
+      // rear left leg
+      0 + rearLegsBodyAngle + 90, // <<<
+      -140 + 80,        
+    },
+    3
   },    
 
+
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle,
+      -140,
+      // rear left leg
+      0 + rearLegsBodyAngle + 20, // <<<
+      -140 ,        
+    },
+    2
+  },   
+
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle,
+      -140,
+      // rear left leg
+      0 + rearLegsBodyAngle + 25 + 20, // <<<
+      -140 + 60,        
+    },
+    2
+  },  
+
+
+// =======================================
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle + 90,
+      -140 + 80,
+      // rear left leg
+      0 + rearLegsBodyAngle + 0, // <<<
+      -140 + 30,        
+    },
+    3
+  },  
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle - 10,
+      -140 + 0,
+      // rear left leg
+      0 + rearLegsBodyAngle + 90, // <<<
+      -140 + 80,        
+    },
+    3
+  },   
+
+
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle,
+      -140,
+      // rear left leg
+      0 + rearLegsBodyAngle + 20, // <<<
+      -140 ,        
+    },
+    2
+  },   
+
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle,
+      -140,
+      // rear left leg
+      0 + rearLegsBodyAngle + 25 + 20, // <<<
+      -140 + 60,        
+    },
+    2
+  },  
+
+
+// =======================================
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle + 90,
+      -140 + 80,
+      // rear left leg
+      0 + rearLegsBodyAngle + 0, // <<<
+      -140 + 30,        
+    },
+    3
+  },  
+
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle - 10,
+      -140 + 0,
+      // rear left leg
+      0 + rearLegsBodyAngle + 90, // <<<
+      -140 + 80,        
+    },
+    3
+  },     
 /* The en
 
 */
