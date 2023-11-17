@@ -10,7 +10,7 @@
  int frontLegsUpper = 100;
  int frontLegsLower = - 120;
  int rearLegsBodyAngle = -10;
- int walkingSpeed = 3;
+ int walkingSpeed = 2;
 
 
 Step stepsWalk[] = {
@@ -37,7 +37,7 @@ Step stepsWalk[] = {
     },
     
   },  
-  
+
     
   // stand up
   {
@@ -58,6 +58,7 @@ Step stepsWalk[] = {
     },
     walkingSpeed
   },   
+
 // =======================================
 
   // # 1
