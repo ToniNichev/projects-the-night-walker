@@ -32,7 +32,10 @@ void loop() {
   // legs.moveLegs(stepsRise, size);
 
   int size = sizeof(stepsWalk)/sizeof(stepsWalk[0]);
-  legs.moveLegs(stepsWalk, size);
+  bool finished = legs.moveLegs(stepsWalk, size);
+  if(finished == 1) {
+    Serial.println("Move finished!");
+  }
   
   delay(10);
 }

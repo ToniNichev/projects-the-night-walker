@@ -64,7 +64,7 @@ class Legs {
      mode = 1;
     }
 
-    void moveLegs(Step* stepsData, int dataSize ) {
+    bool moveLegs(Step* stepsData, int dataSize ) {
       if(mode == 0)
         return;
       if(mode == 1) {
@@ -89,7 +89,9 @@ class Legs {
         mode = 1;
         if(dataTick == dataSize) {
           mode = 0;
+          return true;
         }
       }
+      return false;
     }
 };
