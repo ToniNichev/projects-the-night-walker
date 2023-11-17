@@ -58,9 +58,10 @@ Step stepsWalk[] = {
     },
     walkingSpeed
   },   
+// =======================================
 
-
-
+  // # 1
+  // rear left up
   {
     {
       // front right leg
@@ -80,7 +81,7 @@ Step stepsWalk[] = {
     walkingSpeed
   },   
 
-
+  // # 2
   {
     {
       // front right leg
@@ -94,15 +95,13 @@ Step stepsWalk[] = {
       0 + rearLegsBodyAngle,
       -140,
       // rear left leg
-      0 + rearLegsBodyAngle + 25 + 20, // <<<
-      -140 + 60,        
+      0 + rearLegsBodyAngle + 75, // <<<
+      -140 + 70,        
     },
-    walkingSpeed
+    walkingSpeed + 3
   },  
 
-
-// =======================================
-
+  // # 3
   {
     {
       // front right leg
@@ -113,15 +112,42 @@ Step stepsWalk[] = {
       0 + frontLegsLower,
 
       // rear right leg
-      0 + rearLegsBodyAngle + 90,
-      -140 + 80,
+      0 + rearLegsBodyAngle - 40,
+      -140 - 40,
       // rear left leg
-      0 + rearLegsBodyAngle + 0, // <<<
-      -140 + 30,        
+      0 + rearLegsBodyAngle + 90, // <<<
+      -140 + 70,        
     },
-    walkingSpeed
-  },  
+    walkingSpeed + 2
+  },
 
+  // #########################
+  // right forward
+  // #########################
+
+
+  // # 1
+  {
+    {
+      // front right leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+      // front left leg
+      0 + frontLegsUpper,
+      0 + frontLegsLower,
+
+      // rear right leg
+      0 + rearLegsBodyAngle - 40,
+      -140 - 40,
+      // rear left leg
+      0 + rearLegsBodyAngle + 90, // <<<
+      -140 + 70,        
+    },
+    walkingSpeed + 2
+  },
+
+
+  // # 2
   {
     {
       // front right leg
@@ -133,60 +159,15 @@ Step stepsWalk[] = {
 
       // rear right leg
       0 + rearLegsBodyAngle - 10,
-      -140 + 0,
+      -140 - 50,
       // rear left leg
-      0 + rearLegsBodyAngle + 90, // <<<
-      -140 + 80,        
+      0 + rearLegsBodyAngle + 90 - 40, // <<<
+      -140 + 70 - 40,
     },
-    walkingSpeed
-  },   
+    1
+  },
 
-
-
- 
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle,
-      -140,
-      // rear left leg
-      0 + rearLegsBodyAngle + 20, // <<<
-      -140 ,        
-    },
-    walkingSpeed
-  },   
-
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle,
-      -140,
-      // rear left leg
-      0 + rearLegsBodyAngle + 25 + 20, // <<<
-      -140 + 60,        
-    },
-    walkingSpeed
-  },  
-
-
-// =======================================
-
+  // # 3
   {
     {
       // front right leg
@@ -198,279 +179,15 @@ Step stepsWalk[] = {
 
       // rear right leg
       0 + rearLegsBodyAngle + 90,
-      -140 + 80,
+      -140 + 70,
       // rear left leg
-      0 + rearLegsBodyAngle + 0, // <<<
-      -140 + 30,        
+      0 + rearLegsBodyAngle + 90 - 90, // <<<
+      -140 + 70 - 90,
     },
-    walkingSpeed
-  },  
+    4
+  },
 
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle - 10,
-      -140 + 0,
-      // rear left leg
-      0 + rearLegsBodyAngle + 90, // <<<
-      -140 + 80,        
-    },
-    walkingSpeed
-  },     
-
- 
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle,
-      -140,
-      // rear left leg
-      0 + rearLegsBodyAngle + 20, // <<<
-      -140 ,        
-    },
-    walkingSpeed
-  },   
-
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle,
-      -140,
-      // rear left leg
-      0 + rearLegsBodyAngle + 25 + 20, // <<<
-      -140 + 60,        
-    },
-    walkingSpeed
-  },  
-
-
-// =======================================
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle + 90,
-      -140 + 80,
-      // rear left leg
-      0 + rearLegsBodyAngle + 0, // <<<
-      -140 + 30,        
-    },
-    walkingSpeed
-  },  
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle - 10,
-      -140 + 0,
-      // rear left leg
-      0 + rearLegsBodyAngle + 90, // <<<
-      -140 + 80,        
-    },
-    walkingSpeed
-  },    
-
-
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle,
-      -140,
-      // rear left leg
-      0 + rearLegsBodyAngle + 20, // <<<
-      -140 ,        
-    },
-    walkingSpeed
-  },   
-
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle,
-      -140,
-      // rear left leg
-      0 + rearLegsBodyAngle + 25 + 20, // <<<
-      -140 + 60,        
-    },
-    walkingSpeed
-  },  
-
-
-// =======================================
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle + 90,
-      -140 + 80,
-      // rear left leg
-      0 + rearLegsBodyAngle + 0, // <<<
-      -140 + 30,        
-    },
-    walkingSpeed
-  },  
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle - 10,
-      -140 + 0,
-      // rear left leg
-      0 + rearLegsBodyAngle + 90, // <<<
-      -140 + 80,        
-    },
-    walkingSpeed
-  },   
-
-
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle,
-      -140,
-      // rear left leg
-      0 + rearLegsBodyAngle + 20, // <<<
-      -140 ,        
-    },
-    walkingSpeed
-  },   
-
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle,
-      -140,
-      // rear left leg
-      0 + rearLegsBodyAngle + 25 + 20, // <<<
-      -140 + 60,        
-    },
-    walkingSpeed
-  },  
-
-
-// =======================================
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle + 90,
-      -140 + 80,
-      // rear left leg
-      0 + rearLegsBodyAngle + 0, // <<<
-      -140 + 30,        
-    },
-    walkingSpeed
-  },  
-
-  {
-    {
-      // front right leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-      // front left leg
-      0 + frontLegsUpper,
-      0 + frontLegsLower,
-
-      // rear right leg
-      0 + rearLegsBodyAngle - 10,
-      -140 + 0,
-      // rear left leg
-      0 + rearLegsBodyAngle + 90, // <<<
-      -140 + 80,        
-    },
-    walkingSpeed
-  },     
-/* The en
+/* The end
 
 */
 };
